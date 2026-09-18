@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <defs>
+    <marker id="arw3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6366f1"/>
+    </marker>
+    <marker id="arw3g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <text x="480" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#1e293b">DAINS 产品架构（supervisor + NGINX 统一管控）</text>
+  <rect x="40" y="44" width="96" height="80" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.2"/>
+  <text x="88" y="78" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">客户端层</text>
+  <text x="88" y="100" text-anchor="middle" font-size="10" fill="#64748b">Browser</text>
+  <rect x="150" y="44" width="620" height="80" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.1"/>
+  <text x="460" y="76" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">React SPA（React + TS · vite 构建 · hash 路由）</text>
+  <text x="460" y="100" text-anchor="middle" font-size="10.5" fill="#64748b">九大板块：数据管理 · 宽表 · 分析 · AutoML · 工具 · 习惯 · 看板 · 调度 · 系统</text>
+  <rect x="40" y="146" width="96" height="80" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.2"/>
+  <text x="88" y="180" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">接入层</text>
+  <text x="88" y="202" text-anchor="middle" font-size="10" fill="#64748b">Gateway</text>
+  <rect x="150" y="146" width="300" height="80" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.1"/>
+  <text x="300" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">Cloudflare Tunnel</text>
+  <text x="300" y="202" text-anchor="middle" font-size="10.5" fill="#64748b">外网入口 · 反向出站隧道</text>
+  <rect x="470" y="146" width="300" height="80" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.1"/>
+  <text x="620" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">NGINX :8000</text>
+  <text x="620" y="202" text-anchor="middle" font-size="10.5" fill="#64748b">静态托管 · 服务反代 · 端口统一</text>
+  <line x1="460" y1="124" x2="460" y2="142" stroke="#6366f1" stroke-width="1.6" marker-end="url(#arw3)"/>
+  <line x1="460" y1="226" x2="460" y2="244" stroke="#6366f1" stroke-width="1.6" marker-end="url(#arw3)"/>
+  <rect x="40" y="248" width="96" height="150" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.2"/>
+  <text x="88" y="310" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">应用层</text>
+  <text x="88" y="332" text-anchor="middle" font-size="10" fill="#64748b">Services</text>
+  <rect x="150" y="248" width="620" height="34" rx="8" fill="#334155"/>
+  <text x="460" y="270" text-anchor="middle" font-size="12" font-weight="700" fill="#f8fafc">supervisor 统一管控（ctl.sh 启停 · 日志 · 拉起）</text>
+  <rect x="160" y="294" width="290" height="48" rx="8" fill="#f8fafc" stroke="#6366f1" stroke-width="1.1"/>
+  <text x="305" y="314" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">后端 API 服务</text>
+  <text x="305" y="333" text-anchor="middle" font-size="9.5" fill="#64748b">鉴权 · 数据 · 报告</text>
+  <rect x="470" y="294" width="290" height="48" rx="8" fill="#f8fafc" stroke="#6366f1" stroke-width="1.1"/>
+  <text x="615" y="314" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">AI Agent 服务</text>
+  <text x="615" y="333" text-anchor="middle" font-size="9.5" fill="#64748b">提示词工程 · 代码生成</text>
+  <rect x="160" y="350" width="290" height="48" rx="8" fill="#f8fafc" stroke="#6366f1" stroke-width="1.1"/>
+  <text x="305" y="370" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Python 沙箱执行</text>
+  <text x="305" y="389" text-anchor="middle" font-size="9.5" fill="#64748b">统计分析 · 图表产物</text>
+  <rect x="470" y="350" width="290" height="48" rx="8" fill="#f8fafc" stroke="#6366f1" stroke-width="1.1"/>
+  <text x="615" y="370" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">任务调度器</text>
+  <text x="615" y="389" text-anchor="middle" font-size="9.5" fill="#64748b">看板定时刷新 · 长任务</text>
+  <rect x="790" y="294" width="130" height="62" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.1" stroke-dasharray="5 3"/>
+  <text x="855" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">大模型 API</text>
+  <text x="855" y="341" text-anchor="middle" font-size="9.5" fill="#b45309">按需调用</text>
+  <line x1="770" y1="318" x2="786" y2="318" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="5 3" marker-end="url(#arw3g)"/>
+  <line x1="460" y1="398" x2="460" y2="416" stroke="#6366f1" stroke-width="1.6" marker-end="url(#arw3)"/>
+  <rect x="40" y="420" width="96" height="80" rx="8" fill="#eef2ff" stroke="#6366f1" stroke-width="1.2"/>
+  <text x="88" y="454" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">数据层</text>
+  <text x="88" y="476" text-anchor="middle" font-size="10" fill="#64748b">Storage</text>
+  <rect x="150" y="420" width="196" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.1"/>
+  <text x="248" y="452" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">PostgreSQL :5434</text>
+  <text x="248" y="474" text-anchor="middle" font-size="10" fill="#14532d">业务表 · 产物元信息</text>
+  <rect x="362" y="420" width="196" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.1"/>
+  <text x="460" y="452" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">Redis</text>
+  <text x="460" y="474" text-anchor="middle" font-size="10" fill="#14532d">会话 · 双写缓存</text>
+  <rect x="574" y="420" width="196" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.1"/>
+  <text x="672" y="452" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">数据文件区</text>
+  <text x="672" y="474" text-anchor="middle" font-size="10" fill="#14532d">上传文件 · 分析产物</text>
+  <rect x="54" y="522" width="852" height="30" rx="8" fill="none" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="6 4"/>
+  <text x="480" y="542" text-anchor="middle" font-size="11.5" fill="#475569">全部组件可整体私有化交付；网络集成正朝 docker compose 一体化演进</text>
+</svg>
