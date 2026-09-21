@@ -156,7 +156,7 @@ DAINS（Data Insight Studio）是一个**对话式统计分析工作台**：把�
 
 ## 反馈与问卷
 
-DAINS 为个人 OPC（One Person Company）项目，使用过程中难免遇到 bug——请您在 **xx-xx** 处填写 bug 报告（接受截图），每一条都会被认真对待、逐条跟进。
+DAINS 为个人 OPC（One Person Company）项目，使用过程中难免遇到 bug——请您登录 [dains.cn](https://dains.cn) →【系统】→【问卷收集】填写 bug 报告（接受截图），每一条都会被认真对待、逐条跟进。
 
 **2027 年前，DAINS 最关心的是用户问卷。**
 
